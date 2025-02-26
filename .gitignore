@@ -1,0 +1,56 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Logs
+logs
+*.log
+logs/
+debug.log
+*.gz
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Database files
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.db-journal
+dump.rdb
+*.pids
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+.cache/
+.out/
+.vscode/
+.idea/
+*.swp
+
+# Docker
+docker-compose.override.yml
+docker-sync.yml
+
+# Misc
+.npm/
+.bower/
+eslintcache
+.prettier_cache/
