@@ -54,3 +54,4 @@ docker-sync.yml
 .bower/
 eslintcache
 .prettier_cache/
+.vercel

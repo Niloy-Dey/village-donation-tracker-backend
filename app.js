@@ -14,7 +14,29 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(cors());
+// app.use(cors());
+const allowedOrigins = [
+  'http://localhost:3000',  
+  'https://your-vercel-app.vercel.app', 
+];
+
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true, 
+  })
+);
+
+
 app.use(bodyParser.json());
 
 // Routes
