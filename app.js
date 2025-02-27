@@ -17,7 +17,7 @@ const app = express();
 // app.use(cors());
 const allowedOrigins = [
   'http://localhost:3000',  
-  'https://durgabari.netlify.app/', 
+  'https://durgabari.netlify.app', 
 ];
 
 
