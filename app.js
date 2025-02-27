@@ -17,7 +17,7 @@ const app = express();
 // app.use(cors());
 const allowedOrigins = [
   'http://localhost:3000',  
-  'https://your-vercel-app.vercel.app', 
+  'https://durgabari.netlify.app/', 
 ];
 
 
